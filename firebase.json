@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "agrobime",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
