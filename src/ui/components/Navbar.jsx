@@ -17,7 +17,7 @@ export const Navbar = () => {
         <Link className="navbar-brand" to="/home">
           Agrobime
           <img
-            src="/vite.svg"
+            src="/agrobime.png"
             alt="Logo"
             width="30"
             height="24"

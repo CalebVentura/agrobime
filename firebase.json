@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "agrobime",
-    "public": "dist",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
