@@ -36,7 +36,7 @@ export const ReactDatatable = () => {
         const datax = await get(child(dbRef, 'D'))
             .then((snapshot) => {
                 if (snapshot.exists()) {
-                    const data = Object.values(snapshot.val()).slice(1, 15)
+                    const data = Object.values(snapshot.val())
                     const datax = data.map((elem) => {
                         return {
                             id: data.indexOf(elem),
@@ -67,7 +67,7 @@ export const ReactDatatable = () => {
 
     return (
         <>
-            {datafb.length > 0 ? <DataTable columns={columns} data={datafb} /> : <p> Cargando... </p>}
+            {datafb.length > 0 ? <DataTable columns={columns} data={datafb} pagination/> : <p> Cargando... </p>}
             {/* <button className='btn btn-info fw-semibold me-2' onClick={handleSubmitData}>Enviar Data</button> */}
             {/* <button className='btn btn-success fw-semibold me-2' onClick={handleGetData}>Obtener Data</button> */}
         </>

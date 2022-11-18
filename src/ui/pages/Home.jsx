@@ -107,8 +107,8 @@ export const Home = () => {
           </div>
           <div className="text-center row row-cols-2 row-cols-md-3 g-4">
             <div className="col">
-              <div className="card h-100">
-                <img src="/media/avatars/caleb-icon.jpg" className="card-img-top" alt="..." />
+              <div className="card h-100 border-0 rounded-5 bg-dark text-light">
+                <img src="/media/avatars/caleb-icon.jpg" className="card-img-top rounded-5" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Caleb Ventura</h5>
                   <p className="card-text">Ingeniería de Telecomuncaciones</p>
@@ -116,8 +116,8 @@ export const Home = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card h-100">
-                <img src="/media/avatars/150-4.jpg" className="card-img-top" alt="..." />
+              <div className="card h-100 border-0 rounded-5 bg-dark text-light">
+                <img src="/media/avatars/jamer.jpg" className="card-img-top rounded-5" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Jamer Asencio</h5>
                   <p className="card-text">Ingeniería Electrónica</p>
@@ -125,19 +125,10 @@ export const Home = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card h-100">
-                <img src="/media/avatars/150-14.jpg" className="card-img-top" alt="..." />
+              <div className="card h-100 border-0 rounded-5 bg-dark text-light">
+                <img src="/media/avatars/marjorie.jpg" className="card-img-top rounded-5" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Margaly Flores</h5>
-                  <p className="card-text">Ingeniería Eleectrónica</p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img src="/media/avatars/150-9.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Marjorie</h5>
+                  <h5 className="card-title">Marjorie Reyes</h5>
                   <p className="card-text">Ingeniería Ambiental</p>
                 </div>
               </div>
@@ -155,11 +146,14 @@ export const Home = () => {
             <h3 className="fw-bold"> Instituciones que nos respaldan</h3>
           </div>
           <div className="row">
-            <div className="col-6 text-center">
+            <div className="col-4 text-center">
               <img src="/media/uni.png" className="img-fluid" alt="..." style={{ 'width': '150px' }} />
             </div>
-            <div className="col-6 text-center">
+            <div className="col-4 text-center">
               <img src="/media/startupuni.jpg" className="img-fluid" alt="..." style={{ 'width': '150px' }} />
+            </div>
+            <div className="col-4 text-center">
+              <img src="/media/fiee.png" className="img-fluid py-5" alt="..." style={{ 'width': '150px' }} />
             </div>
           </div>
         </div>
