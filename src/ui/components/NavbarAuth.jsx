@@ -2,12 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 
 export const NavbarAuth = () => {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-dark rounded-3">
+    <nav className="navbar navbar-expand navbar-dark bg-dark rounded-3 m-2">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/home">
           Agrobime
           <img
-            src="/vite.svg"
+            src="/agrobime.png"
             alt="Logo"
             width="30"
             height="24"

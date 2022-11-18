@@ -12,7 +12,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-dark rounded-3">
+    <nav className="navbar navbar-expand navbar-dark bg-dark rounded-3 mx-2 mt-2 mb-5">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/home">
           Agrobime

@@ -5,4 +5,4 @@ logout -> salir de la sesión
 
 npm run build -> dist/
 
-firebase deploy --only hosting:agrobime
+firebase deploy

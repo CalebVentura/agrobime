@@ -6,7 +6,6 @@ export const ClientRoutes = () => {
   return (
     <>
       <Navbar />
-      <hr />
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/monitoreo" element={<Monitoreo />} />

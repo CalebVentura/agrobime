@@ -8,8 +8,8 @@ export const ReactDatatable = () => {
 
     const columns = [
         { name: 'id', selector: row => row.id, sortable: true },
-        { name: 'Día', selector: row => row.A, sortable: true },
-        { name: 'Hora', selector: row => row.B, sortable: true },
+        // { name: 'Día', selector: row => row.A, sortable: true },
+        // { name: 'Hora', selector: row => row.B, sortable: true },
         { name: 'Válvula on/off', selector: row => row.C, sortable: true },
         { name: 'T° Ambiente', selector: row => row.D, sortable: true },
         { name: 'H Ambiente ', selector: row => row.E, sortable: true },
@@ -40,8 +40,8 @@ export const ReactDatatable = () => {
                     const datax = data.map((elem) => {
                         return {
                             id: data.indexOf(elem),
-                            A: elem.P.split('U')[0],
-                            B: elem.P.split('U')[1],
+                            // A: elem.P.split('U')[0],
+                            // B: elem.P.split('U')[1],
                             C: elem.P.split('U')[2],
                             D: elem.S.split('U')[0],
                             E: elem.S.split('U')[1],

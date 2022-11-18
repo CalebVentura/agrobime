@@ -8,7 +8,7 @@ import { PublicRoutes } from "./PublicRoutes";
 
 export const AppRouter = () => {
   return (
-    <div className="container-fluid p-4">
+    <div className="">
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path='/auth' element={<PublicRoutes> <Auth/> </PublicRoutes>} />

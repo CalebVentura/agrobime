@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../context";
 import { NavbarAuth } from "../components/NavbarAuth";
+import { Footer } from "../components/Footer";
 
 export const Auth = () => {
   const { register, login } = useContext(UserContext);
@@ -9,8 +10,8 @@ export const Auth = () => {
   const [userCredentials, setUserCredentials] = useState({ email: '', password: '' })
   const [errorMessage, setErrorMessage] = useState('')
 
-  const handleChange = ({target: {name, value}}) => {
-    setUserCredentials({...userCredentials, [name]: value})
+  const handleChange = ({ target: { name, value } }) => {
+    setUserCredentials({ ...userCredentials, [name]: value })
   }
 
   const handleRegister = async (ev) => {
@@ -68,43 +69,55 @@ export const Auth = () => {
   return (
     <>
       <NavbarAuth />
-      <hr />
-      <h1>Autorización de usuario</h1>
-      {errorMessage ? <p className="fw-bold text-danger">{errorMessage}</p> : ''}
-      <div className="card">
-        <div className="card-body">
-          <div className="form-floating mb-3">
-            <input
-              type="email"
-              name='email'
-              className="form-control"
-              id="floatingInput"
-              placeholder="name@agrobime.com"
-              onChange={handleChange}
-            />
-            <label htmlFor="floatingInput">Correo electrónico</label>
-          </div>
-          <div className="form-floating">
-            <input
-              type="password"
-              name="password"
-              className="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-              onChange={handleChange}
-            />
-            <label htmlFor="floatingPassword">Contraseña</label>
-          </div>
-          <div className="mt-3">
-            <button className="me-2 btn btn-primary" type="button" onClick={handleLogin}>
-              Iniciar Sesión
-            </button>
-            <button className="me-2 btn btn-success" type="button" onClick={handleRegister}>
+
+      <section className="mt-4">
+        <div className="container-fluid text-center">
+          <h1>Autorización de usuario</h1>
+        </div>
+      </section>
+
+      <section className="mt-4">
+        <div className="container">
+          {errorMessage ? <p className="fw-bold text-danger">{errorMessage}</p> : ''}
+          <div className="card">
+            <div className="card-body">
+              <div className="form-floating mb-3">
+                <input
+                  type="email"
+                  name='email'
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="name@agrobime.com"
+                  onChange={handleChange}
+                />
+                <label htmlFor="floatingInput">Correo electrónico</label>
+              </div>
+              <div className="form-floating">
+                <input
+                  type="password"
+                  name="password"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                  onChange={handleChange}
+                />
+                <label htmlFor="floatingPassword">Contraseña</label>
+              </div>
+              <div className="mt-3">
+                <button className="me-2 btn btn-primary" type="button" onClick={handleLogin}>
+                  Iniciar Sesión
+                </button>
+                {/* <button className="me-2 btn btn-success" type="button" onClick={handleRegister}>
               Registrarme
-            </button>
+            </button> */}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <Footer />
+
     </>
   );
 };
